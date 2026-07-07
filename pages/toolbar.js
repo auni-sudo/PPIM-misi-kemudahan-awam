@@ -1,4 +1,9 @@
 (function() {
+  var orientStyle = document.createElement('style');
+  orientStyle.id = 'tb-orient-style';
+  orientStyle.textContent = '@page { size: A4 portrait; }';
+  document.head.appendChild(orientStyle);
+
   var style = document.createElement('style');
   style.textContent =
     '#export-toolbar{position:fixed;bottom:0;left:0;right:0;z-index:99999;' +
@@ -14,6 +19,8 @@
     '.tb-pdf{background:#E06666;color:#FFF}' +
     '.tb-png{background:#4A90E2;color:#FFF}' +
     '.tb-docx{background:#6AA84F;color:#FFF}' +
+    '.tb-orient{background:#8E7CC3;color:#FFF}' +
+    '.tb-orient.active{background:#CBB17E;color:#332211}' +
     '.tb-size{color:#887755;font-size:8pt;margin-left:2mm}' +
     '.tb-home{background:transparent;color:#CBB17E;text-decoration:none;font-size:9pt;margin-right:auto}' +
     '.tb-home:hover{color:#EFE3C3}' +
@@ -25,16 +32,26 @@
   bar.innerHTML =
     '<a class="tb-home" href="../index.html">Kembali</a>' +
     '<span class="tb-label">Eksport:</span>' +
-    '<button class="tb-btn tb-pdf" onclick="window.print()">PDF A4</button>' +
+    '<button class="tb-btn tb-pdf" onclick="window.print()">PDF</button>' +
     '<button class="tb-btn tb-png" id="btn-png" onclick="exportPNG()">PNG</button>' +
     '<button class="tb-btn tb-docx" onclick="exportDOCX()">DOCX</button>' +
-    '<span class="tb-size">A4 - 210x297mm</span>';
+    '<span class="tb-label" style="margin-left:3mm;">Cetak:</span>' +
+    '<button class="tb-btn tb-orient active" id="btn-portrait" onclick="setOrient(\'portrait\')">Portrait</button>' +
+    '<button class="tb-btn tb-orient" id="btn-landscape" onclick="setOrient(\'landscape\')">Landscape</button>' +
+    '<span class="tb-size">A4</span>';
   document.body.appendChild(bar);
 
   var s = document.createElement('script');
   s.src = 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js';
   document.head.appendChild(s);
 })();
+
+window.setOrient = function(orient) {
+  var el = document.getElementById('tb-orient-style');
+  el.textContent = '@page { size: A4 ' + orient + '; margin: 5mm; }';
+  document.getElementById('btn-portrait').className = 'tb-btn tb-orient' + (orient === 'portrait' ? ' active' : '');
+  document.getElementById('btn-landscape').className = 'tb-btn tb-orient' + (orient === 'landscape' ? ' active' : '');
+};
 
 window.exportPNG = function() {
   if (typeof html2canvas === 'undefined') {
@@ -76,7 +93,6 @@ window.exportDOCX = function() {
     '<style>body{font-family:Arial;margin:2cm;color:#000}p{margin:0}</style></head>' +
     '<body>' + document.body.innerHTML.replace(/<script[\s\S]*?<\/script>/gi, '') +
     '</body></html>';
-
   var blob = new Blob([doc], { type: 'application/msword' });
   var a = document.createElement('a');
   a.download = (document.title || 'page').replace(/[^a-zA-Z0-9]/g, '_') + '.doc';

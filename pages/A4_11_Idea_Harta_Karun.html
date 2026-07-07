@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Idea Harta Karun</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+h1 {
+  font-family: 'Impact', sans-serif; font-size: 22pt;
+  color: #332211; text-align: center;
+  text-shadow: 2px 2px 0 #CBB17E;
+  margin-bottom: 8mm;
+}
+.intro {
+  text-align: center; font-size: 12pt; margin-bottom: 8mm;
+  color: #665544;
+}
+.grid-ganjaran {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 6mm; margin-bottom: 8mm;
+}
+.ganjaran {
+  background: rgba(255,255,255,0.6);
+  border: 3px solid #CBB17E;
+  border-radius: 12px; padding: 6mm 4mm;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.ganjaran .emoji { font-size: 48pt; display: block; margin-bottom: 3mm; }
+.ganjaran .nama {
+  font-family: 'Impact', sans-serif; font-size: 14pt;
+  color: #332211;
+}
+.ganjaran .label { font-size: 10pt; color: #887755; margin-top: 1mm; }
+.ganjaran-istimewa {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(203,177,126,0.2), rgba(246,178,107,0.2));
+  border-color: #F6B26B;
+  padding: 6mm;
+}
+.kotak-hias {
+  background: rgba(203,177,126,0.15);
+  border: 2px dashed #CBB17E;
+  border-radius: 8px; padding: 4mm 6mm;
+  text-align: center; font-size: 11pt; line-height: 1.5;
+}
+.senarai-semak {
+  position: absolute; bottom: 10mm; left: 8mm; right: 8mm;
+  display: flex; justify-content: space-around;
+  font-size: 9pt; color: #887755;
+}
+.senarai-semak .item { text-align: center; }
+.senarai-semak .kotak {
+  display: inline-block; width: 5mm; height: 5mm;
+  border: 2px solid #CBB17E; border-radius: 2px;
+  margin-bottom: 1mm;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<h1>🎁 IDEA HARTA KARUN</h1>
+<div class="intro">Masukkan semua item ini ke dalam satu kotak berhias untuk Peti Harta Karun!</div>
+<div class="grid-ganjaran">
+  <div class="ganjaran">
+    <div class="emoji">🍬</div>
+    <div class="nama">Gula-gula</div>
+    <div class="label">Makanan ringan</div>
+  </div>
+  <div class="ganjaran">
+    <div class="emoji">✏️</div>
+    <div class="nama">Pensel</div>
+    <div class="label">Alat tulis</div>
+  </div>
+  <div class="ganjaran">
+    <div class="emoji">📖</div>
+    <div class="nama">Penanda Buku</div>
+    <div class="label">Bacaan</div>
+  </div>
+  <div class="ganjaran">
+    <div class="emoji">⭐</div>
+    <div class="nama">Pelekat</div>
+    <div class="label">"Ejen Penjaga Kemudahan Awam"</div>
+  </div>
+  <div class="ganjaran ganjaran-istimewa">
+    <div class="emoji">🏅</div>
+    <div class="nama">Sijil</div>
+    <div class="label">Sijil Ejen Penjaga Kemudahan Awam (Hlm 12)</div>
+  </div>
+</div>
+<div class="kotak-hias">
+  💡 <strong>Tip:</strong> Hias kotak dengan kertas warna dan label "HARTA KARUN" — letak di Bilik Guru / Kelas sebagai stesen akhir.
+</div>
+<div class="senarai-semak">
+  <div class="item"><div class="kotak"></div>🍬 Gula-gula</div>
+  <div class="item"><div class="kotak"></div>✏️ Pensel</div>
+  <div class="item"><div class="kotak"></div>📖 Penanda Buku</div>
+  <div class="item"><div class="kotak"></div>⭐ Pelekat</div>
+  <div class="item"><div class="kotak"></div>🏅 Sijil</div>
+</div>
+<div class="page-num">Hlm 11/12</div>
+<script src="toolbar.js"></script></body></html>

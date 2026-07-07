@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Stesen 4 - Kotak Misteri</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+.header-stesen {
+  background: #F6B26B; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.header-stesen h2 { font-family: 'Impact', sans-serif; font-size: 18pt; letter-spacing: 1px; }
+.header-stesen .sampul { font-size: 10pt; opacity: 0.9; }
+.arahan {
+  font-size: 12pt; margin-bottom: 5mm; line-height: 1.4;
+  padding: 3mm 0; border-bottom: 2px dashed #F6B26B;
+}
+.kotak-ilustrasi {
+  background: linear-gradient(135deg, rgba(246,178,107,0.15), rgba(246,178,107,0.05));
+  border: 3px solid #F6B26B;
+  border-radius: 12px; padding: 8mm;
+  text-align: center; margin-bottom: 6mm;
+}
+.kotak-ilustrasi .emoji { font-size: 48pt; }
+.kotak-ilustrasi .label { font-size: 11pt; color: #887755; margin-top: 2mm; }
+.ruang-jawapan {
+  display: flex; flex-direction: column; gap: 4mm;
+}
+.ruang-item {
+  background: rgba(246,178,107,0.06);
+  border: 1px solid rgba(246,178,107,0.25);
+  border-radius: 6px; padding: 3mm 4mm;
+}
+.ruang-item .label {
+  font-size: 10pt; color: #887755; font-weight: bold;
+  display: inline;
+}
+.ruang-item .garis {
+  display: inline-block; border-bottom: 1px solid #332211;
+  width: 70%; height: 5mm; margin-left: 2mm;
+}
+.senarai-gambar {
+  background: rgba(246,178,107,0.08);
+  border: 1px dashed #F6B26B;
+  border-radius: 6px; padding: 3mm 5mm; margin-bottom: 5mm;
+  font-size: 10pt; line-height: 1.6;
+}
+.senarai-gambar .label { color: #887755; font-size: 9pt; }
+.petunjuk {
+  background: rgba(246,178,107,0.12);
+  border-left: 4px solid #F6B26B;
+  padding: 3mm 5mm; margin-top: 4mm;
+  font-size: 11pt; font-style: italic;
+}
+.markah {
+  position: absolute; bottom: 10mm; right: 8mm;
+  background: #F6B26B; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  font-family: 'Impact', sans-serif; font-size: 14pt;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<div class="header-stesen">
+  <div style="font-size:24pt;">🟠</div>
+  <div>
+    <h2>STESEN 4 — KOTAK MISTERI</h2>
+    <div class="sampul">SAMPUL 4 (Jingga)</div>
+  </div>
+</div>
+<div class="arahan">📝 Ambil <strong>1 gambar dari Kotak Misteri</strong>. Terangkan dalam 30 saat.</div>
+<div class="kotak-ilustrasi">
+  <div class="emoji">🎁</div>
+  <div class="label">Kotak Misteri — ambil satu gambar dan terangkan</div>
+</div>
+<div class="senarai-gambar">
+  <span class="label">Gambar dalam kotak: </span>
+  🏥 Hospital &nbsp;|&nbsp; 👮 Balai Polis &nbsp;|&nbsp; ⚽ Padang &nbsp;|&nbsp; 📚 Perpustakaan &nbsp;|&nbsp; 🚗 Jalan Raya
+</div>
+<div class="ruang-jawapan">
+  <div class="ruang-item">
+    <span class="label">✔ Nama:</span><span class="garis"></span>
+  </div>
+  <div class="ruang-item">
+    <span class="label">✔ Fungsi:</span><span class="garis"></span>
+  </div>
+  <div class="ruang-item">
+    <span class="label">✔ Cara menjaganya:</span><span class="garis"></span>
+  </div>
+</div>
+<div class="petunjuk">🔎 Petunjuk: "Pergi ke kawasan murid bersukan."</div>
+<div class="markah">MARKAH: ___ /10</div>
+<div class="page-num">Hlm 7/12</div>
+<script src="toolbar.js"></script></body></html>

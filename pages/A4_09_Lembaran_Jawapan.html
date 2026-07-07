@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Lembaran Jawapan Kumpulan</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+h1 {
+  font-family: 'Impact', sans-serif; font-size: 22pt;
+  color: #332211; text-align: center;
+  text-shadow: 2px 2px 0 #CBB17E;
+  margin-bottom: 6mm;
+}
+.info-kumpulan {
+  display: flex; flex-direction: column; gap: 2mm;
+  margin-bottom: 6mm;
+}
+.info-kumpulan .row {
+  display: flex; align-items: center; gap: 3mm;
+}
+.info-kumpulan .label { font-size: 11pt; font-weight: bold; min-width: 25mm; }
+.info-kumpulan .garis { flex: 1; border-bottom: 1px solid #332211; height: 5mm; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 6mm; }
+th {
+  background: #332211; color: #EFE3C3;
+  padding: 3mm; font-size: 11pt; text-align: left;
+}
+td { padding: 3mm; border-bottom: 1px solid #CBB17E; font-size: 11pt; }
+td:last-child, th:last-child { text-align: center; width: 25mm; }
+tr:nth-child(even) td { background: rgba(203,177,126,0.1); }
+.stesen-1 { border-left: 4px solid #4A90E2; }
+.stesen-2 { border-left: 4px solid #E06666; }
+.stesen-3 { border-left: 4px solid #6AA84F; }
+.stesen-4 { border-left: 4px solid #F6B26B; }
+.stesen-5 { border-left: 4px solid #8E7CC3; }
+.jumlah { background: #CBB17E !important; font-weight: bold; }
+.jumlah td { border-bottom: 3px solid #332211; }
+.ahli { margin-top: 5mm; }
+.ahli .label { font-size: 11pt; font-weight: bold; margin-bottom: 2mm; }
+.ahli-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.ahli-item { display: flex; align-items: center; gap: 2mm; }
+.ahli-item .num { font-size: 10pt; color: #887755; }
+.ahli-item .garis { flex: 1; border-bottom: 1px solid #332211; height: 5mm; }
+.bintang {
+  text-align: center; margin-top: 4mm;
+  font-size: 20pt; letter-spacing: 4mm; color: #CBB17E;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<h1>📋 LEMBARAN JAWAPAN</h1>
+<div class="info-kumpulan">
+  <div class="row"><span class="label">NAMA KUMPULAN:</span><div class="garis"></div></div>
+</div>
+<table>
+  <tr>
+    <th>Stesen</th>
+    <th>Markah Maksimum</th>
+    <th>Markah Diperoleh</th>
+  </tr>
+  <tr class="stesen-1">
+    <td>1 — Kenali Kemudahan Awam</td>
+    <td>12</td>
+    <td>___</td>
+  </tr>
+  <tr class="stesen-2">
+    <td>2 — Betul atau Salah?</td>
+    <td>8</td>
+    <td>___</td>
+  </tr>
+  <tr class="stesen-3">
+    <td>3 — Cari Kesalahan</td>
+    <td>10</td>
+    <td>___</td>
+  </tr>
+  <tr class="stesen-4">
+    <td>4 — Kotak Misteri</td>
+    <td>10</td>
+    <td>___</td>
+  </tr>
+  <tr class="stesen-5">
+    <td>5 — Cabaran Akhir KBAT</td>
+    <td>10</td>
+    <td>___</td>
+  </tr>
+  <tr class="jumlah">
+    <td>JUMLAH</td>
+    <td>50</td>
+    <td>___</td>
+  </tr>
+</table>
+<div class="ahli">
+  <div class="label">NAMA AHLI:</div>
+  <div class="ahli-grid">
+    <div class="ahli-item"><span class="num">1.</span><div class="garis"></div></div>
+    <div class="ahli-item"><span class="num">2.</span><div class="garis"></div></div>
+    <div class="ahli-item"><span class="num">3.</span><div class="garis"></div></div>
+    <div class="ahli-item"><span class="num">4.</span><div class="garis"></div></div>
+    <div class="ahli-item"><span class="num">5.</span><div class="garis"></div></div>
+    <div class="ahli-item"><span class="num">6.</span><div class="garis"></div></div>
+  </div>
+</div>
+<div class="bintang">☆ &nbsp; ☆ &nbsp; ☆ &nbsp; ☆ &nbsp; ☆</div>
+<div class="page-num">Hlm 9/12</div>
+<script src="toolbar.js"></script></body></html>

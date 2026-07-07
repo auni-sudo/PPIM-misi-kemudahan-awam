@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Stesen 1 - Kenali Kemudahan Awam</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+.header-stesen {
+  background: #4A90E2; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.header-stesen h2 { font-family: 'Impact', sans-serif; font-size: 18pt; letter-spacing: 1px; }
+.header-stesen .sampul { font-size: 10pt; opacity: 0.9; }
+.arahan {
+  font-size: 12pt; margin-bottom: 5mm; line-height: 1.4;
+  padding: 3mm 0; border-bottom: 2px dashed #4A90E2;
+}
+.grid-ikon {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4mm; margin-bottom: 5mm;
+}
+.item-ikon {
+  display: flex; align-items: center; gap: 3mm;
+  background: rgba(74,144,226,0.08);
+  border: 1px solid rgba(74,144,226,0.3);
+  border-radius: 6px; padding: 3mm;
+}
+.item-ikon .emoji { font-size: 28pt; min-width: 14mm; text-align: center; }
+.item-ikon .ruang { flex: 1; }
+.item-ikon .ruang .label { font-size: 9pt; color: #665544; }
+.item-ikon .ruang .garis { border-bottom: 1px solid #332211; height: 6mm; margin-top: 1mm; }
+.petunjuk {
+  background: rgba(74,144,226,0.12);
+  border-left: 4px solid #4A90E2;
+  padding: 3mm 5mm; margin-bottom: 4mm;
+  font-size: 11pt; font-style: italic;
+}
+.markah {
+  position: absolute; bottom: 10mm; right: 8mm;
+  background: #4A90E2; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  font-family: 'Impact', sans-serif; font-size: 14pt;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<div class="header-stesen">
+  <div style="font-size:24pt;">🔵</div>
+  <div>
+    <h2>STESEN 1 — KENALI KEMUDAHAN AWAM</h2>
+    <div class="sampul">SAMPUL 1 (Biru)</div>
+  </div>
+</div>
+<div class="arahan">📝 Namakan kemudahan awam berikut dan nyatakan <strong>SATU</strong> fungsi.</div>
+<div class="grid-ikon">
+  <div class="item-ikon">
+    <div class="emoji">🏥</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+  <div class="item-ikon">
+    <div class="emoji">📚</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+  <div class="item-ikon">
+    <div class="emoji">🚒</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+  <div class="item-ikon">
+    <div class="emoji">👮</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+  <div class="item-ikon">
+    <div class="emoji">🚏</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+  <div class="item-ikon">
+    <div class="emoji">🛝</div>
+    <div class="ruang"><div class="label">Nama: ______________</div><div class="garis"></div><div class="label">Fungsi: ______________</div></div>
+  </div>
+</div>
+<div class="petunjuk">💡 Petunjuk: "Saya tempat orang membaca buku."</div>
+<div class="markah">MARKAH: ___ /12</div>
+<div class="page-num">Hlm 3/12</div>
+<script src="toolbar.js"></script></body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Stesen 3 - Cari 5 Kesalahan</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+.header-stesen {
+  background: #6AA84F; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.header-stesen h2 { font-family: 'Impact', sans-serif; font-size: 18pt; letter-spacing: 1px; }
+.header-stesen .sampul { font-size: 10pt; opacity: 0.9; }
+.arahan {
+  font-size: 12pt; margin-bottom: 5mm; line-height: 1.4;
+  padding: 3mm 0; border-bottom: 2px dashed #6AA84F;
+}
+.gambar-container {
+  text-align: center; margin-bottom: 3mm;
+  border: 2px solid #6AA84F; border-radius: 6px;
+  overflow: hidden; background: #FFF;
+}
+.gambar-container img {
+  max-width: 100%; max-height: 120mm;
+  display: block; margin: 0 auto;
+}
+.senarai-kesalahan { display: flex; flex-direction: column; gap: 2mm; }
+.kesalahan {
+  display: flex; align-items: center; gap: 3mm;
+}
+.kesalahan .num {
+  font-family: 'Impact', sans-serif; font-size: 12pt;
+  color: #6AA84F; min-width: 6mm;
+}
+.kesalahan .garis { flex: 1; border-bottom: 1px solid #332211; height: 6mm; }
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<div class="header-stesen">
+  <div style="font-size:24pt;">🟢</div>
+  <div>
+    <h2>STESEN 3 — CARI 5 KESALAHAN</h2>
+    <div class="sampul">SAMPUL 3 (Hijau) — Bahagian Gambar</div>
+  </div>
+</div>
+<div class="arahan">📝 Lihat gambar di bawah. Cari <strong>SEKURANG-KURANGNYA 5 kesalahan</strong>.</div>
+<div class="gambar-container">
+  <img src="../assets/illustrations/gambar_taman_permainan_rosak.png" alt="Taman Permainan Rosak">
+</div>
+<div class="senarai-kesalahan">
+  <div class="kesalahan"><span class="num">1.</span><div class="garis"></div></div>
+  <div class="kesalahan"><span class="num">2.</span><div class="garis"></div></div>
+  <div class="kesalahan"><span class="num">3.</span><div class="garis"></div></div>
+  <div class="kesalahan"><span class="num">4.</span><div class="garis"></div></div>
+  <div class="kesalahan"><span class="num">5.</span><div class="garis"></div></div>
+</div>
+<div class="page-num">Hlm 5/12</div>
+<script src="toolbar.js"></script></body></html>

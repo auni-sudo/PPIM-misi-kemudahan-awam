@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Stesen 3 - Cadangan Penyelesaian</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+.header-stesen {
+  background: #6AA84F; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  display: flex; align-items: center; gap: 4mm;
+  margin-bottom: 5mm;
+}
+.header-stesen h2 { font-family: 'Impact', sans-serif; font-size: 16pt; letter-spacing: 1px; }
+.header-stesen .sampul { font-size: 10pt; opacity: 0.9; }
+.arahan {
+  font-size: 12pt; margin-bottom: 5mm; line-height: 1.4;
+  padding: 3mm 0; border-bottom: 2px dashed #6AA84F;
+}
+.senarai-cadangan { display: flex; flex-direction: column; gap: 4mm; }
+.item-cadangan {
+  display: flex; gap: 3mm;
+  background: rgba(106,168,79,0.06);
+  border: 1px solid rgba(106,168,79,0.2);
+  border-radius: 6px; padding: 3mm;
+}
+.item-cadangan .num {
+  font-family: 'Impact', sans-serif; font-size: 14pt;
+  color: #6AA84F; min-width: 8mm; text-align: center;
+}
+.item-cadangan .content { flex: 1; }
+.item-cadangan .content .kesalahan-label { font-size: 9pt; color: #665544; margin-bottom: 1mm; }
+.item-cadangan .content .garis { border-bottom: 1px solid #332211; height: 8mm; margin-top: 1mm; }
+.petunjuk {
+  background: rgba(106,168,79,0.12);
+  border-left: 4px solid #6AA84F;
+  padding: 3mm 5mm; margin-top: 5mm;
+  font-size: 11pt; font-style: italic;
+}
+.nota-cetak {
+  position: absolute; bottom: 12mm; left: 8mm;
+  font-size: 7pt; color: #998866; font-style: italic;
+}
+.markah {
+  position: absolute; bottom: 10mm; right: 8mm;
+  background: #6AA84F; color: #FFF;
+  padding: 3mm 6mm; border-radius: 6px;
+  font-family: 'Impact', sans-serif; font-size: 14pt;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<div class="header-stesen">
+  <div style="font-size:24pt;">🟢</div>
+  <div>
+    <h2>STESEN 3 — CADANGAN PENYELESAIAN</h2>
+    <div class="sampul">SAMPUL 3 (Hijau) — Bahagian Cadangan</div>
+  </div>
+</div>
+<div class="arahan">📝 Cadangkan <strong>satu cara mengatasi</strong> setiap masalah di bawah.</div>
+<div class="senarai-cadangan">
+  <div class="item-cadangan">
+    <div class="num">1</div>
+    <div class="content">
+      <div class="kesalahan-label">Masalah: Sampah bertaburan</div>
+      <div class="garis"></div>
+    </div>
+  </div>
+  <div class="item-cadangan">
+    <div class="num">2</div>
+    <div class="content">
+      <div class="kesalahan-label">Masalah: Vandalisme pada dinding</div>
+      <div class="garis"></div>
+    </div>
+  </div>
+  <div class="item-cadangan">
+    <div class="num">3</div>
+    <div class="content">
+      <div class="kesalahan-label">Masalah: Kerusi rosak</div>
+      <div class="garis"></div>
+    </div>
+  </div>
+  <div class="item-cadangan">
+    <div class="num">4</div>
+    <div class="content">
+      <div class="kesalahan-label">Masalah: Pokok dipatahkan</div>
+      <div class="garis"></div>
+    </div>
+  </div>
+  <div class="item-cadangan">
+    <div class="num">5</div>
+    <div class="content">
+      <div class="kesalahan-label">Masalah: Lampu pecah</div>
+      <div class="garis"></div>
+    </div>
+  </div>
+</div>
+<div class="petunjuk">🔎 Petunjuk: "Cari tempat orang membeli makanan."</div>
+<div class="nota-cetak">* Boleh cetak dupleks dengan Halaman 5 (Cari Kesalahan).</div>
+<div class="markah">MARKAH: ___ /10</div>
+<div class="page-num">Hlm 6/12</div>
+<script src="toolbar.js"></script></body></html>

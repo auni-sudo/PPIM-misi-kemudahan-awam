@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Kad Petunjuk Guru</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 8mm;
+  position: relative;
+}
+h1 {
+  font-family: 'Impact', sans-serif; font-size: 20pt;
+  color: #332211; text-align: center;
+  text-shadow: 2px 2px 0 #CBB17E;
+  margin-bottom: 6mm;
+}
+.grid-kad {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5mm; height: 220mm;
+}
+.kad {
+  border-radius: 8px; padding: 8mm;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 3mm; position: relative;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+.kad .emoji-besar { font-size: 40pt; }
+.kad .teks {
+  font-size: 14pt; font-weight: bold; text-align: center;
+  line-height: 1.4;
+}
+.kad .destinasi {
+  font-size: 10pt; opacity: 0.8;
+  margin-top: 2mm; font-style: italic;
+}
+.kad-1 { background: rgba(74,144,226,0.15); border: 3px solid #4A90E2; color: #2a5a8e; }
+.kad-2 { background: rgba(224,102,102,0.15); border: 3px solid #E06666; color: #8a3a3a; }
+.kad-3 { background: rgba(106,168,79,0.15); border: 3px solid #6AA84F; color: #3a6a2a; }
+.kad-4 { background: rgba(142,124,195,0.15); border: 3px solid #8E7CC3; color: #5a4a7a; }
+.garis-potong {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  border: 1px dashed rgba(0,0,0,0.08);
+  pointer-events: none;
+  border-radius: 8px;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<h1>🗝️ KAD PETUNJUK GURU</h1>
+<div class="grid-kad">
+  <div class="kad kad-1">
+    <div class="garis-potong"></div>
+    <div class="emoji-besar">📚</div>
+    <div class="teks">"Banyak buku di sini."</div>
+    <div class="destinasi">→ Ke Perpustakaan</div>
+  </div>
+  <div class="kad kad-2">
+    <div class="garis-potong"></div>
+    <div class="emoji-besar">🕌</div>
+    <div class="teks">"Tempat umat Islam menunaikan solat."</div>
+    <div class="destinasi">→ Ke Surau</div>
+  </div>
+  <div class="kad kad-3">
+    <div class="garis-potong"></div>
+    <div class="emoji-besar">🍛</div>
+    <div class="teks">"Ramai murid makan di sini."</div>
+    <div class="destinasi">→ Ke Kantin</div>
+  </div>
+  <div class="kad kad-4">
+    <div class="garis-potong"></div>
+    <div class="emoji-besar">⚽</div>
+    <div class="teks">"Tempat bersukan."</div>
+    <div class="destinasi">→ Ke Padang</div>
+  </div>
+</div>
+<div class="page-num">Hlm 10/12</div>
+<script src="toolbar.js"></script></body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Poster Misi - Misi Ejen Penjaga Kemudahan Awam</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 10mm;
+  display: flex; flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge { font-size: 10pt; color: #8E7CC3; text-align: center; margin-bottom: 5mm; letter-spacing: 2px; }
+h1 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 28pt; color: #332211; text-align: center;
+  text-shadow: 3px 3px 0 #CBB17E, 5px 5px 0 rgba(0,0,0,0.2);
+  margin: 8mm 0 5mm; line-height: 1.2;
+}
+.subtitle {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 14pt; color: #CBB17E; text-align: center;
+  margin-bottom: 8mm; letter-spacing: 3px;
+}
+.reben {
+  background: linear-gradient(135deg, #CBB17E, #E06666);
+  color: #FFF; text-align: center; padding: 4mm 8mm;
+  font-family: 'Impact', sans-serif; font-size: 18pt;
+  transform: rotate(-2deg); margin: 5mm auto;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  max-width: 80%;
+}
+.cerita {
+  background: rgba(255,255,255,0.6);
+  border: 3px solid #CBB17E; border-radius: 8px;
+  padding: 5mm; margin: 4mm 0;
+  font-size: 11pt; line-height: 1.5; text-align: justify;
+}
+.cerita strong { color: #E06666; }
+.objektif {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3mm;
+  margin: 4mm 0;
+}
+.obj-item {
+  background: rgba(74,144,226,0.15);
+  border-left: 4px solid #4A90E2; padding: 3mm;
+  font-size: 10pt; border-radius: 0 4px 4px 0;
+}
+.bahan { margin-top: auto; font-size: 9pt; }
+.bahan h3 { font-size: 10pt; color: #6AA84F; margin-bottom: 2mm; }
+.bahan ul { list-style: none; display: flex; flex-wrap: wrap; gap: 2mm 4mm; }
+.bahan li::before { content: '✔ '; color: #6AA84F; }
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<div class="badge">✦ PERGERAKAN PUTERI ISLAM MALAYSIA — TAHUN 6 ✦</div>
+<h1>MISI EJEN PENJAGA<br>KEMUDAHAN AWAM</h1>
+<div class="subtitle">⚔ TREASURE HUNT ⚔</div>
+<div class="reben">MISI ANDA: SELAMATKAN BANDAR HARMONI!</div>
+<div class="cerita">
+  <strong>Amaran!</strong> Bandar Harmoni berada dalam bahaya. Seorang penjahat bernama <strong>'Mr. Vandalisme'</strong> telah merosakkan pelbagai kemudahan awam. Kamu ialah <strong>Ejen Penjaga Kemudahan Awam</strong>. Selesaikan semua misi untuk menyelamatkan bandar!
+</div>
+<div class="objektif">
+  <div class="obj-item">🔍 Mengenal pasti kemudahan awam dan fungsinya</div>
+  <div class="obj-item">⚖️ Membezakan tindakan betul dan salah</div>
+  <div class="obj-item">🛠️ Menganalisis kesalahan dan mencadangkan penyelesaian</div>
+  <div class="obj-item">🤝 Menghargai kemudahan awam melalui kerjasama</div>
+</div>
+<div class="bahan">
+  <h3>📦 Bahan Diperlukan</h3>
+  <ul>
+    <li>5 sampul surat berwarna</li>
+    <li>Kad tugasan setiap stesen</li>
+    <li>Peta harta karun</li>
+    <li>Lembaran jawapan</li>
+    <li>Hadiah kecil untuk harta karun</li>
+  </ul>
+</div>
+<div class="page-num">Hlm 1/12</div>
+<script src="toolbar.js"></script></body></html>

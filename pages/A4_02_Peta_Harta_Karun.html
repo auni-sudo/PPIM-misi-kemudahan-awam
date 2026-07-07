@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<title>Peta Harta Karun - Misi Ejen</title>
+<style>
+@page { size: A4; margin: 5mm; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  background: #FFF;
+  color: #332211;
+  width: 210mm; height: 297mm;
+  padding: 6mm 10mm;
+  display: flex; flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 18pt; color: #332211;
+  text-shadow: 2px 2px 0 #CBB17E;
+  margin-bottom: 3mm; text-align: center;
+}
+.map-container {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1.5mm;
+  width: 100%; flex: 1;
+  justify-content: center;
+}
+.stesen {
+  display: flex; align-items: center; gap: 4mm;
+  background: rgba(255,255,255,0.7);
+  border: 1.5px solid #CBB17E;
+  border-radius: 6px; padding: 2mm 5mm;
+  width: 75%; max-width: 130mm;
+}
+.stesen .icon { font-size: 18pt; min-width: 10mm; text-align: center; }
+.stesen .info { font-size: 10pt; }
+.stesen .info .nama { font-weight: bold; font-size: 11pt; }
+.stesen .info .lokasi { color: #665544; font-size: 9pt; }
+.arrow { font-size: 14pt; color: #E06666; line-height: 1; }
+.stesen-1 { border-left: 5px solid #4A90E2; }
+.stesen-2 { border-left: 5px solid #E06666; }
+.stesen-3 { border-left: 5px solid #6AA84F; }
+.stesen-4 { border-left: 5px solid #F6B26B; }
+.stesen-5 { border-left: 5px solid #8E7CC3; }
+.start {
+  font-family: 'Impact', sans-serif; font-size: 13pt;
+  color: #6AA84F; text-align: center;
+}
+.harta {
+  background: linear-gradient(135deg, #CBB17E, #F6B26B);
+  border: 2.5px solid #E06666;
+  border-radius: 6px; padding: 2mm 5mm;
+  width: 75%; max-width: 130mm;
+  text-align: center;
+  font-family: 'Impact', sans-serif; font-size: 12pt;
+  color: #332211;
+}
+.harta .x { color: #E06666; font-size: 16pt; }
+.cetak-nota {
+  position: absolute; bottom: 10mm; left: 8mm;
+  font-size: 7pt; color: #998866;
+  font-style: italic;
+}
+.page-num { position: absolute; bottom: 5mm; right: 8mm; font-size: 9pt; color: #998866; }
+</style>
+</head>
+<body>
+<h1>🗺️ PETA HARTA KARUN 🗺️</h1>
+<div class="map-container">
+  <div class="start">🏁 MULA</div>
+  <div class="arrow">⬇</div>
+  <div class="stesen stesen-1">
+    <div class="icon">📍</div>
+    <div class="info"><div class="nama">STESEN 1</div><div class="lokasi">Dalam Kelas</div></div>
+  </div>
+  <div class="arrow">⬇</div>
+  <div class="stesen stesen-2">
+    <div class="icon">📍</div>
+    <div class="info"><div class="nama">STESEN 2</div><div class="lokasi">Perpustakaan</div></div>
+  </div>
+  <div class="arrow">⬇</div>
+  <div class="stesen stesen-3">
+    <div class="icon">📍</div>
+    <div class="info"><div class="nama">STESEN 3</div><div class="lokasi">Surau</div></div>
+  </div>
+  <div class="arrow">⬇</div>
+  <div class="stesen stesen-4">
+    <div class="icon">📍</div>
+    <div class="info"><div class="nama">STESEN 4</div><div class="lokasi">Kantin</div></div>
+  </div>
+  <div class="arrow">⬇</div>
+  <div class="stesen stesen-5">
+    <div class="icon">📍</div>
+    <div class="info"><div class="nama">STESEN 5</div><div class="lokasi">Padang</div></div>
+  </div>
+  <div class="arrow">⬇</div>
+  <div class="harta">🏆 <span class="x">X</span> HARTA KARUN<br><span style="font-size:10pt;font-family:Arial">(Bilik Guru / Kelas)</span></div>
+</div>
+<div class="cetak-nota">* Boleh cetak A3 untuk kegunaan guru. Versi A4 untuk edaran murid.</div>
+<div class="page-num">Hlm 2/12</div>
+<script src="toolbar.js"></script></body></html>
